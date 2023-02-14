@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cálculo de Pagos en Cuotas</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Cálculo de Pagos en Cuotas</h1>
+      <div class="form-group">
+        <label for="amount">Monto a pagar:</label>
+        <input type="text" class="form-control" id="amount">
+      </div>
+      <div class="form-group">
+        <label for="payments">Número de cuotas (3, 6 o 12):</label>
+        <input type="text" class="form-control" id="payments">
+      </div>
+      <button class="btn mt-3 btn-danger" onclick="calculatePayments()">Calcular</button>
+    <br><br>
+    <div id="result" class="jumbotron">
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
